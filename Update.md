@@ -1,21 +1,53 @@
 # Update
 
-Dikkat - bu update'de verilen Container Temizleme Komutu Tüm Containerleri Temizler. 
-Eğer içeride Docker içerisinde farklı Containerler varsa dikkat ediniz.
+
 
 ```console
-docker rm -f $(docker ps -a -q) && docker system prune --volumes -a -f
-```
-Allora-Chain Dizinine Gir
+# bu komut ile allora containerlerin idleri alıyoruz.
+docker ps
 
-```console
-cd allora-chain 
+docker stop İD
+docker rm İD
+# idleri düzenleyerek allora için olanları temizliyoruz.
 ```
+
+<img width="427" alt="Ekran Resmi 2024-07-03 11 48 09" src="https://github.com/ruesandora/Allora/assets/101149671/d4c0c0fe-6382-4253-88a6-e591feb5748f">
+
+#
+
+Şimdi bizim Basic-coin-prediction-node dizinine girmemiz lazım - Rues'in repoda cd komutu ile ana dizine dönmeden Allora dizini içerisinde kurmuşsundur vb. ihtimaller  için 2 tarafıda ekledik.
+--
+Ya Allora-Chain dizininin içinde olacak Yada Ana dizinde bulunacak.
+--
+Terminalinize girdiniz. " ls " komutunu girdiniz eğer Basic-coin-prediction-node Dizini yoksa Allora-Chain dizininin içindedir. 
+--
+Eğer "ls" yaptığınızda Basic-coin-prediction-node dizini bulunuyorsa direkt dizine girebilirsiniz.
+--
+
 Basic-coin-prediction-node Dizinine Gir 
 
 ```console
 cd basic-coin-prediction-node
 ```
+
+-------
+
+Eğer Ana Dizinde Yoksa Allora Chain Dizini üzerinden Basic-coin-prediction-node dizinine girin.
+
+Allora-Chain Dizinine Gir
+#
+
+```console
+cd allora-chain 
+```
+
+Basic-coin-prediction-node Dizinine Gir 
+
+```console
+cd basic-coin-prediction-node
+```
+
+------------
 
 Docker-compose.yml Dosyasının İçine Girelim
 
