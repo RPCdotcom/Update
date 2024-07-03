@@ -16,13 +16,13 @@ docker rm İD
 #
 
 Şimdi bizim Basic-coin-prediction-node dizinine girmemiz lazım - Rues'in repoda cd komutu ile ana dizine dönmeden Allora dizini içerisinde kurmuşsundur vb. ihtimaller  için 2 tarafıda ekledik.
---
+
 Ya Allora-Chain dizininin içinde olacak Yada Ana dizinde bulunacak.
---
+
 Terminalinize girdiniz. " ls " komutunu girdiniz eğer Basic-coin-prediction-node Dizini yoksa Allora-Chain dizininin içindedir. 
---
+
 Eğer "ls" yaptığınızda Basic-coin-prediction-node dizini bulunuyorsa direkt dizine girebilirsiniz.
---
+
 
 Basic-coin-prediction-node Dizinine Gir 
 
