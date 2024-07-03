@@ -96,3 +96,17 @@ Almanız Gereken Sonuç:
   }
 }
 ```
+
+Şimdi Sadece 200 Aldık Diye bitmiyor - Loglarda Güzel Devam etmeli
+```console
+docker ps 
+```
+
+Buradan node-worker Container ID Aldın 
+```console
+docker logs -f id
+```
+
+Loglar bir süre sonra akmaya başlayacak şunu gibi görünecek : 
+
+![image](https://github.com/RPCdotcom/Update/assets/141464235/d93434f4-7210-4d43-8431-fd86ee7ac279)
