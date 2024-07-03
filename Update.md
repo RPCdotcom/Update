@@ -3,19 +3,25 @@
 Dikkat - bu update'de verilen Container Temizleme Komutu Tüm Containerleri Temizler. 
 Eğer içeride Docker içerisinde farklı Containerler varsa dikkat ediniz.
 
+```console
 docker rm -f $(docker ps -a -q) && docker system prune --volumes -a -f
-
+```
 Allora-Chain Dizinine Gir
 
+```console
 cd allora-chain 
-
+```
 Basic-coin-prediction-node Dizinine Gir 
 
+```console
 cd basic-coin-prediction-node
+```
 
 Docker-compose.yml Dosyasının İçine Girelim
 
+```console
 nano docker-compose.yml 
+```
 
 ![image](https://github.com/RPCdotcom/Update/assets/141464235/e81d4ce7-9a61-406e-b7b8-d8ee7e32752f)
 
