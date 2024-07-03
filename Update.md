@@ -30,9 +30,9 @@ Buradaki TimeOut Sizde 5'dir bunu 10'a çıkaralım.
 ![image](https://github.com/RPCdotcom/Update/assets/141464235/9aaa8e6f-6e70-4393-af1b-a2d450b9bd12)
 
 Burayıda düzenleyelim 
-
+```console
 --topic=allora-topic-1-worker
-
+```
 Böyle Gözükecek : 
 
 ![image](https://github.com/RPCdotcom/Update/assets/141464235/e1c96158-7060-4a4b-9379-f661648a1312)
@@ -40,13 +40,14 @@ Böyle Gözükecek :
 CTRL X - CTRL Y - Enter İle Kaydedelim.
 
 Containerleri Sildik - Geri Buildleyelim 
-
+```console
 docker compose build
 docker compose up -d
-
+```
 
 Kontrol Edelim : 
 
+```console
 curl --location 'http://localhost:6000/api/v1/functions/execute' \
 --header 'Content-Type: application/json' \
 --data '{
@@ -69,9 +70,9 @@ curl --location 'http://localhost:6000/api/v1/functions/execute' \
         "timeout": 2
     }
 }'
-
+```
 Almanız Gereken Sonuç: 
-
+```console
 {
   "code": "200",
   "request_id": "03001a39-4387-467c-aba1-c0e1d0d44f59",
@@ -94,3 +95,4 @@ Almanız Gereken Sonuç:
     ]
   }
 }
+```
